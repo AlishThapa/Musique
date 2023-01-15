@@ -218,7 +218,7 @@ class _MusicScreenState extends State<MusicScreen> {
                                 BoxShape.circle, const Offset(2, 2), 2.0, 0.0),
                             child: const Icon(
                               Icons.skip_previous,
-                              color: Colors.white70,
+                              color: Colors.black,
                             ),
                           ),
                         ),
@@ -251,13 +251,13 @@ class _MusicScreenState extends State<MusicScreen> {
                                     return const Icon(
                                       Icons.pause,
                                       size: 30,
-                                      color: Colors.white70,
+                                      color: Colors.black,
                                     );
                                   }
                                   return const Icon(
                                     Icons.play_arrow,
                                     size: 30,
-                                    color: Colors.white70,
+                                    color: Colors.black,
                                   );
                                 },
                               )),
@@ -278,7 +278,7 @@ class _MusicScreenState extends State<MusicScreen> {
                                 BoxShape.circle, const Offset(2, 2), 2.0, 2.0),
                             child: const Icon(
                               Icons.skip_next,
-                              color: Colors.white,
+                              color: Colors.black,
                             ),
                           ),
                         ),
@@ -304,7 +304,7 @@ class _MusicScreenState extends State<MusicScreen> {
                             padding: const EdgeInsets.all(10.0),
                             margin:  const EdgeInsets.only(right: 30.0, ),
                             decoration:  getDecoration(BoxShape.circle, const Offset(2, 2), 2.0, 0.0),
-                            child: const Icon(Icons.list_alt, color: Colors.white70,),
+                            child: const Icon(Icons.list_alt, color: Colors.black,),
                           ),
                         ),
                       ),
@@ -324,7 +324,7 @@ class _MusicScreenState extends State<MusicScreen> {
                                 BoxShape.circle, const Offset(2, 2), 2.0, 0.0),
                             child: const Icon(
                               Icons.shuffle,
-                              color: Colors.white70,
+                              color: Colors.black,
                             ),
                           ),
                         ),
@@ -347,9 +347,9 @@ class _MusicScreenState extends State<MusicScreen> {
                               builder: (context, snapshot){
                                 final loopMode = snapshot.data;
                                 if(LoopMode.one == loopMode){
-                                  return const Icon(Icons.repeat_one, color: Colors.white70,);
+                                  return const Icon(Icons.repeat_one, color: Colors.black,);
                                 }
-                                return const Icon(Icons.repeat, color: Colors.white70,);
+                                return const Icon(Icons.repeat, color: Colors.black,);
                               },
                             ),
                           ),
